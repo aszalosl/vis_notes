@@ -13,3 +13,6 @@
 
 > we can cancel the previous operator by selecting a new one
 (can use operators in operator-pending mode, too)
+
+* missing text formatting (qq,gw,) rot13 (g?), fold (zf), (exists in vim)
+* operators works line-wise, `<count>dj` delete whole lines

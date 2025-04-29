@@ -32,12 +32,6 @@
 * `fzfmru` in command mode
 * `<space>b` in normal mode
 
-### [super-shellout](https://github.com/seifferth/vis-super-shellout)
-
-* execute an outer command and read its output
-* a bit nicer version of `:<`
-* `R` in command mode
-
 ### [vis-commentary](https://github.com/lutobler/vis-commentary)
 
 * toggle comment on lines, in many programming languages
@@ -81,7 +75,7 @@
 
 * uses [ripgrep](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md) to find a keyword in the subtree,
   and fzf to select among them
-* `rg keyword` in command mode
+* `:rg keyword` in command mode
 
 ### [vis-goto-file](https://repo.or.cz/vis-goto-file.git)
 
@@ -154,4 +148,4 @@
 
 ### insert mode
 
-* `<M-^-h>` - delete last mistyped word
+* `<M-^-h>` - delete last mistyped word (<^-w> does the same)

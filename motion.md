@@ -32,7 +32,9 @@
 * jump the prev.(`#`)/next(`*`) occurence the word under the cursor
 * search forward(`/`), backward(`?`), repeat search forward(`n`), backward(`N`)
   * repeat search forward(`gn`), backward(`gN`) _in visual mode_
-* move forward/backward on jump list `g<`/`g>` _in normal and visual mode_
+* move forward/backward on jump-list `g<`/`g>` _in normal and visual mode_
+  * in vim this is <^-i>/<^-o>
+  * in vis there is no change jump-list
 
 ## file
 
@@ -48,6 +50,7 @@
 * half pages: `<S-PgDn>`/`<S-PgUp>`
 * pages `<PgDn>`, `<^-b>`/`<PgUp>`, `<^-f>`
 * window lines: `<^-e>`/`<^-y>` _in normal mode_
+  * at MacOs <^-y> acts as <^-z>, suspends the editor
 
 ## misc
 

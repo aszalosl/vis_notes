@@ -22,6 +22,13 @@
 * [command mode](command.md): `:`
 * [operator-pending mode](pending.md): `c`, `d`, `y`, `<` and `>`
 
+## Vim grammar
+
+* [count][operator](operator.md)[motion](motion.md)/[text-object](text_object,md) or [operator][operator.md](count)<[motion](motion.md)/[text-object](text_object,md)
+  * no difference at count-operator orders (in vim the repetition (`.`) differs after this)
+    * `2dw` or `d2w`
+  * [count1][operator][count2][motion] doesn't work as expected (as product steps in vim)
+
 ## Misc
 
 * Repeat command `.`
@@ -33,6 +40,7 @@
 * help: `<F1>`
 * focus next `<^-w>j`/`<^-w>l`, prev. `<^-w>k`/`<^-w>h` window
 * split `<^-w>s`, vsplit `<^-w>v`
+* restore last selection: `gv`
 
 ## Shortcuts
 
@@ -40,7 +48,3 @@
 * quit! `ZQ`
 * write-quit `ZZ`
 * open `<^-w>n`
-
-## Misc
-
-* restore last selection? `gv`

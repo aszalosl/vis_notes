@@ -21,6 +21,7 @@
 * tab (or spaces) `<Tab>`/`<^-i>`
 * line break `<Enter>`/`<^-m>`/`<^-j>`
 * digraph `<^-k>`, Unicode char `<^-v>`
+  * `<^-k>a:`:  ä
 * content of a [register](registers.md) `<^-r>`
 * indent/outdent current line `<^-t>`/`<^-d>`
 * left align selections `<S-Tab>`
@@ -30,10 +31,12 @@
 * word in file `<^-n>`
   * [local setup](local.md): word from dictionary `<^-p>`
 * file name `<^-x><^-f>` - redefined by me
+* no abbreviations in vis
 
 ## Delete
 
 * previous char `<Backspace>`, `<^-h>`, next char `<Delete>`, previous WORD `<^-w>`, until the BOL `<^-u>`
+  * in vim <^-u> delete chars conditionally
 
 ## Other
 

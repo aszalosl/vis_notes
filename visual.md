@@ -19,6 +19,9 @@
 
 ## Misc
 
-* record macro: `q`, replay it `@`, e.g. `qa...q` and `@a`
+* `o` go to the other end of the selection
 * suspend editor: `<^-z>`
 * replace char under cursor: `r`
+* invert the selection: `~`
+* `gn`/`gN` search forward/backward - extend the selection
+* replay and record macro `@`/`q`

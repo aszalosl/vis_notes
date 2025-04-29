@@ -20,6 +20,7 @@
 ## Windows
 
 * Open file: `open [args...]` (with or without name)
+  * in a new window
 * Create new window: `new [args...]`, vertically: `vnew [args...]`
 * Horizontally split window: `split [args...]`, vertically: `vsplit [args...]`
 * Quit the current window: `q[!] [args...]`, exit: `qall[!] [args...]`
@@ -52,6 +53,8 @@
 * Run command on files whose name matches: `X/regexp/ command`
   * `X q` - close all windows but unsaved files
   * `X0i/* common comment*/\n`
+  * `X x/pattern/c/replacement/` - replace in all opened files
+  * `X/.md/$i/# Tags: /` - insert text at the end of all markdown files
 * As `X` but select unmatched files: `Y/regexp/ command`
 
 ## Map
@@ -71,3 +74,5 @@
   * `earlier 30s`, `earlier 2m`, `earlier 3h`, `earlier 5d`
 * set [option](options.md) `set [args]`
 * help `:help`, `<F1>`
+* `p` - create a selection covering range, enter into visual mode
+  * `:1,10p`

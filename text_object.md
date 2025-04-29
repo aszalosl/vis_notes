@@ -8,5 +8,5 @@
 * inside/outside sentence, paragraph: `is`, `ip` / `as`, `ap`
 * word/WORD without and with leading+trailing whitespace: `iw`, `iW` / `aw`, `aW`
 * block - adjacent lines with the same indentation level: `a<Tab>`=`i<Tab>`
-* whole line without ans with leading and trailing whitespace: `il`, `al`
+* whole line without and with leading and trailing whitespace: `il`, `al`
 * current lexer token: `ii`
