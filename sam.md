@@ -21,9 +21,19 @@
 
 ## I/O
 
-* `0<date` - insert the date at top
-* `1<date` - replace first line with date
-* `|fmt` - format the selection
+* `! shell-command`  Run the command
+* `< shell-command` Replace range by stdout of command
+  * `0<date` - insert the date at top
+  * `1<date` - replace first line with date
+ * better to use this than `:!`, as the output is lost in the first case (vim wait for a key-press)
+* `> shell-command` Send range to stdin of command
+  * `> logger` - add to the log the current line, `:10,20> ./logger` add several lines
+  * `> logger` can log the selection if it is consist several lines
+  * works silently
+* `| shell-command` Pipe range through command
+  * `|fmt` - format the selection, `,|fmt` format the whole file
+  * `|sort` - sort the lines of the selection
+  * `,|jq` - format the whole json file
 
 ## Misc
 
