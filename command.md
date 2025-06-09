@@ -76,3 +76,7 @@
 * help `:help`, `<F1>`
 * `p` - create a selection covering range, enter into visual mode
   * `:1,10p`
+* we can use [registers](register.md) in command line:
+  * `yiw` and next`:x/<^-r>"/c/pattern/`
+  * there is no default search term as in vim: _:%s//pattern/_
+* `<up>` to open the command window with the previous commands
